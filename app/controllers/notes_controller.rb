@@ -13,7 +13,7 @@ class NotesController < ApplicationController
 	end
 
 	def destroy
-		@note = @book.notes.find(params[:id]])
+		@note = @book.notes.find(params[:id])
 		@note.destroy
 		redirect_to @book, notice:"Note deleted!"
 	end
